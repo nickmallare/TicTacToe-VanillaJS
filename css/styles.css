@@ -1,0 +1,15 @@
+td {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+table{
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+img.resize {
+    width:100px;
+    height:100px;
+  }
