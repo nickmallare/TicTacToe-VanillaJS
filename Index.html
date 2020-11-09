@@ -7,29 +7,60 @@
     <script src="App.js"></script>
     <title>Document</title>
   </head>
+  <header>
+    <img class="Fill" src="Images/tictacImage.png">
+  </header>
   <body>
-      <div id="menu">
-          <button id="pvp">Player vs Player</button>
-          <button id="pvc">Player vs Computer</button>
-      </div>
-    <table id="gameBoard" hidden>
-      <tr>
-        <td id="squareOne"><img id="squareOneImage" class="resize"></td>
-        <td id="squareTwo"><img id="squareTwoImage" class="resize"></td>
-        <td id="squareThree"><img id="squareThreeImage" class="resize"></td>
-      </tr>
-      <tr>
-        <td id="squareFour"><img id="squareFourImage" class="resize"></td>
-        <td id="squareFive"><img id="squareFiveImage" class="resize"></td>
-        <td id="squareSix"><img id="squareSixImage" class="resize"></td>
-      </tr>
-      <tr>
-        <td id="squareSeven"><img id="squareSevenImage" class="resize"></td>
-        <td id="squareEight"><img id="squareEightImage" class="resize"></td>
-        <td id="squareNine"><img id="squareNineImage" class="resize"></td>
-      </tr>
-    </table>
+    <div class="gameOptions">
+      <input type="radio" id="pvp" value="pvp" />
+      <label for="pvp">Player vs Player</label>
 
-    <p id="playersTurn">sd</p>
+      <input type="radio" id="pvc" value="pvc" />
+      <label for="pvc">Player vs Computer</label><br />
+    </div>
+    <div class="gameButtons">
+      <button id="startButton">Start/Reset</button>
+      <button id="playAgainButton" hidden>Play Again?</button>
+    </div>
+    <div>
+      <table id="gameBoard" hidden>
+        <tr>
+          <td id="squareOne">
+            <img id="squareOneImage" class="resize" src="Images/blank.jpg" />
+          </td>
+          <td id="squareTwo">
+            <img id="squareTwoImage" class="resize" src="Images/blank.jpg" />
+          </td>
+          <td id="squareThree">
+            <img id="squareThreeImage" class="resize" src="Images/blank.jpg" />
+          </td>
+        </tr>
+        <tr>
+          <td id="squareFour">
+            <img id="squareFourImage" class="resize" src="Images/blank.jpg" />
+          </td>
+          <td id="squareFive">
+            <img id="squareFiveImage" class="resize" src="Images/blank.jpg" />
+          </td>
+          <td id="squareSix">
+            <img id="squareSixImage" class="resize" src="Images/blank.jpg" />
+          </td>
+        </tr>
+        <tr>
+          <td id="squareSeven">
+            <img id="squareSevenImage" class="resize" src="Images/blank.jpg" />
+          </td>
+          <td id="squareEight">
+            <img id="squareEightImage" class="resize" src="Images/blank.jpg" />
+          </td>
+          <td id="squareNine">
+            <img id="squareNineImage" class="resize" src="Images/blank.jpg" />
+          </td>
+        </tr>
+      </table>
+
+      <h2 id="playersTurn"></h2>
+      <h2 id="timer"></h2>
+    </div>
   </body>
 </html>
