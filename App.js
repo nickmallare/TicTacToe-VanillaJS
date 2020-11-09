@@ -43,6 +43,7 @@ window.onload = function () {
 
   playAgainButton.addEventListener("click", function () {
     startResetButton.click();
+    playAgainButton.setAttribute("hidden", true);
 
   });
 
